@@ -12,6 +12,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
         <style>
             body {
                 padding-top: 50px;
@@ -27,66 +28,225 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+
+
+        <div class="row">
+             <div class="col-md-4">
+              <h2>Võimalikud seadistused</h2>
+                    <ul>
+                        <li>Üldised seadistused</li>
+                        <li> Raamatu seadistused</li>
+                            <ul>
+                                <li>Bilanss</li>
+                                <li>Eelarved</li>
+                                <li>Elukohad</li>
+                                <li>Finants - Statistika</li>
+                                <li>Finantskontod</li>
+                                <li>Finantsretseptid</li>
+                                <li>Finantsseeriad</li>
+                                <li>Haridused</li>
+                                <li>Inventari klassid</li>
+                                <li>Inventari Reg.amordi klassid</li>
+                                <li>Käibemaksuaruanne</li>
+                                <li>Käibemaksukoodid</li>
+                                <li>Kassa suunad</li>
+                                <li>Kasumiaruanne</li>
+                                <li>Korrespondeerimised</li>
+                                <li>Kulutuste marsruudid</li>
+                                <li>Kulutuste tüübid</li>
+                                <li>Objekti tasemed</li>
+                                <li>Pangad</li>
+                                <li>Tasumisviisid</li>
+                                <li>Vahekanded</li>
+                                <li>Valuutad</li>
+                                <li>Valuutakursid</li>
+                            </ul>
+                        <li> Personali seadistused</li>
+                        <li> Lao seadistused</li>
+                        <li> Müügi seadistused</li>
+                        <li> Ostu seadistused</li>
+                        <li> Isiklikud seadistused</li>
+                        <li> Väljatrükkide häälestamine</li>
+                    </ul>
+
             </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+
+
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-8">
+                      nimekiri - sule - jäta
+                    </div>
+                    <div class="col-md-4">
+                      tagasi
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <h1>Finantskontod</h1>
+
+                  <div class="col-sm-7 col-sm-offset-1">
+                    <form class="form-horizontal" role="form">
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="status">olek</label>
+                        <div class="col-sm-9">
+                          <span>Muudetud</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="code">kood</label>
+                        <div class="col-sm-9">
+                          <span>10418</span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="name">nimi</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="kmkood">kmkood</label>
+                          <div class="col-sm-9">
+                          <select class="form-control" id="kmkood">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">        
+                        <label class="control-label col-sm-3" for="pwd">mahakandmiseks</label>
+                        <div class="col-sm-9">
+                            <label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+                        </div>
+                      </div>
+                      <div class="form-group">        
+                        <label class="control-label col-sm-3" for="closed">suletud</label>
+                        <div class="col-sm-9">
+                            <label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="name">objekti tüüp</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                      </div>
+                       <div class="form-group">
+                        <label class="control-label col-sm-3" for="klass">klass</label>
+                          <div class="col-sm-9">
+                          <select class="form-control" id="klass">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div>
+                      </div>               
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="korrkonto">korr. konto</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="korrkonto">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="taxonomy">taksonoomia</label>
+                        <div class="col-sm-9">
+                          <span>lisa</span>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="levels">objekti tasemed (kohustuslik)</label>
+                        <div class="col-sm-9">
+                          <div class="checkbox">
+                          <label><input type="checkbox" value="">Option 1</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 2</label>
+                          </div>
+                          <div class="checkbox disabled">
+                            <label><input type="checkbox" value="" disabled>Option 3</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 2</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Option 2</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+
+                  <div class="col-sm-9 col-sm-offset-1">
+                    <table class="table table-hover">
+                      <thead class="thead-default">
+                        <tr>
+                          <th>Tüüp</th>
+                          <th>Sisu</th>
+                          <th>Parameeter</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="col-md-3">
+                            <select class="form-control" id="tüüp">
+                            <option selected> </option>
+                            <option value="1">Võõrkeelne</option>
+                            <option value="2">Projektijuht</option>
+                          </select>
+                        </td>
+                          <td>
+                            <input type="text" class="form-control" id="sisu">
+                          </td>
+                          <td class="col-md-3">
+                              <select class="form-control" id="parameeter">
+                              <option> </option>
+                              <option value="1" selected>ENG</option>
+                              <option value="2">FIN</option>
+                              <option value="3">GER</option>
+                              <option value="4">LT</option>
+                              <option value="5">LV</option>
+                              </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select class="form-control" id="tüüp">
+                            <option selected> </option>
+                            <option value="1">Võõrkeelne</option>
+                            <option value="2">Projektijuht</option>
+                          </select>
+                        </td>
+                          <td>
+                            <input type="text" class="form-control" id="sisu">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="parameeter">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
 
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
