@@ -4,8 +4,56 @@
    Author's custom styles
    ========================================================================== */
 
+# ---- TEXT ---- #
 
-.form-horizontal .label .control-label{
+body {
+	font-size: 11px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 21pt;
+    letter-spacing: 2px;
+    font-weight: 200;
+
+}
+
+.control-label, h2, .main a {
+	font-variant: small-caps;
+	font-size: 13pt;
+	font-weight: 600;
+    letter-spacing: 3px;
+}
+
+# ---- LINKS ---- #
+
+.main a {
+	color: #FF4343;
+}
+
+.main a:hover {
+	color: black;
+	text-decoration: none;
+}
+.main a:active{
+	color: black;
+}
+
+.sidebar a {
+	color: #000000;
+	font-size: 13pt;
+}
+
+.sidebar a:hover {
+	color: #FF4343;
+	text-decoration: none;
+}
+
+# ----  ---- #
+
+.form-horizontal .label, .control-label{
   text-align:right;
 }
 

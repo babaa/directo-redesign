@@ -19,9 +19,10 @@
                 padding-bottom: 20px;
             }
         </style>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -32,10 +33,10 @@
 
 
         <div class="row">
-             <div class="col-md-4">
-              <h2>Võimalikud seadistused</h2>
+             <div class="col-md-4 sidebar">
+              <h2>võimalikud seadistused</h2>
                     <ul>
-                        <li>Üldised seadistused</li>
+                        <li><a href="#">Üldised seadistused</a></li>
                         <li> Raamatu seadistused</li>
                             <ul>
                                 <li>Bilanss</li>
@@ -73,13 +74,15 @@
             </div>
 
 
-            <div class="col-md-8">
+            <div class="col-md-8 main">
                 <div class="row">
                     <div class="col-md-8">
-                      nimekiri - sule - jäta
+                      <a href="#">nimekiri</a>
+                      <a href="#">sule</a>
+                      <a href="#">jäta</a>
                     </div>
                     <div class="col-md-4">
-                      tagasi
+                      <a href="#">tagasi</a>
                     </div>
                 </div>
 
@@ -87,101 +90,115 @@
                 <div class="row">
                     <h1>Finantskontod</h1>
 
-                  <div class="col-sm-7 col-sm-offset-1">
+                  <div class="col-sm-7">
                     <form class="form-horizontal" role="form">
 
                       <div class="form-group">
-                        <label class="control-label col-sm-3" for="status">olek</label>
-                        <div class="col-sm-9">
+                        <label class="control-label col-sm-4" for="status">olek</label>
+                        <div class="col-sm-8">
                           <span>Muudetud</span>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-3" for="code">kood</label>
-                        <div class="col-sm-9">
+                        <label class="control-label col-sm-4" for="code">kood</label>
+                        <div class="col-sm-8">
                           <span>10418</span>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-3" for="name">nimi</label>
-                        <div class="col-sm-9">
+                        <label class="control-label col-sm-4" for="name">nimi</label>
+                        <div class="col-sm-8">
                           <input type="text" class="form-control" id="name">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-3" for="kmkood">kmkood</label>
-                          <div class="col-sm-9">
+                        <label class="control-label col-sm-4" for="kmkood">kmkood</label>
+                          <div class="col-sm-8">
                           <select class="form-control" id="kmkood">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option selected> </option>
+                            <option value="0">0 (0% käive)</option>
+                            <option value="1">1 (20% käive Eestis)</option>
+                            <option value="2">2 (0% käive Eestis)</option>
+                            <option value="3">3 (KM-ta käive Eestis)</option>
+                            <option value="4">4 (Ehitiste soetusmaksumusse arva)</option>
+                            <option value="5">5 (Import)</option>
+                            <option value="6">6 (Eksport)</option>
+                            <option value="3">7 (Saksa KM)</option>
                           </select>
                         </div>
                       </div>
                       <div class="form-group">        
-                        <label class="control-label col-sm-3" for="pwd">mahakandmiseks</label>
-                        <div class="col-sm-9">
-                            <label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-                            <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-                            <label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+                        <label class="control-label col-sm-4" for="pwd">mahakandmiseks</label>
+                        <div class="col-sm-8">
+                            <label class="radio-inline"><input type="radio" name="optradio">Jah</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Ei</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Määramata</label>
                         </div>
                       </div>
                       <div class="form-group">        
-                        <label class="control-label col-sm-3" for="closed">suletud</label>
-                        <div class="col-sm-9">
-                            <label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-                            <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-                            <label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+                        <label class="control-label col-sm-4" for="closed">suletud</label>
+                        <div class="col-sm-8">
+                            <label class="radio-inline"><input type="radio" name="optradio">Jah</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Ei</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Määramata</label>
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-3" for="name">objekti tüüp</label>
-                        <div class="col-sm-9">
+                        <label class="control-label col-sm-4" for="name">objekti tüüp</label>
+                        <div class="col-sm-8">
                           <input type="text" class="form-control" id="name">
                         </div>
                       </div>
                        <div class="form-group">
-                        <label class="control-label col-sm-3" for="klass">klass</label>
-                          <div class="col-sm-9">
+                        <label class="control-label col-sm-4" for="klass">klass</label>
+                          <div class="col-sm-8">
                           <select class="form-control" id="klass">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
+                            <option selected> </option>
+                            <option value="0">0 (Varad)</option>
+                            <option value="1">1 (Võlad)</option>
+                            <option value="2">2 (Omakapital)</option>
+                            <option value="3">3 (Tulud)</option>
+                            <option value="4">4 (Kulud)</option>
+                            <option value="5">5 (Bilansiväline)</option>
+                          </select>
                           </select>
                         </div>
                       </div>               
                       <div class="form-group">
-                        <label class="control-label col-sm-3" for="korrkonto">korr. konto</label>
-                        <div class="col-sm-9">
+                        <label class="control-label col-sm-4" for="korrkonto">korr. konto</label>
+                        <div class="col-sm-8">
                           <input type="text" class="form-control" id="korrkonto">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-3" for="taxonomy">taksonoomia</label>
-                        <div class="col-sm-9">
-                          <span>lisa</span>
+                        <label class="control-label col-sm-4" for="taxonomy">taksonoomia</label>
+                        <div class="col-sm-8">
+                          <a href="#">lisa</a>
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label col-sm-3" for="levels">objekti tasemed (kohustuslik)</label>
-                        <div class="col-sm-9">
+                        <label class="control-label col-sm-4" for="levels">objekti tasemed (kohustuslik)</label>
+                        <div class="col-sm-8">
+                          <label class="control-label col-sm-1">0</label>
                           <div class="checkbox">
-                          <label><input type="checkbox" value="">Option 1</label>
+                          <label><input type="checkbox" value="0">Osakond</label>
                           </div>
+                          <label class="control-label col-sm-1">1</label>
                           <div class="checkbox">
-                            <label><input type="checkbox" value="">Option 2</label>
+                            <label><input type="checkbox" value="1">Valdkond</label>
                           </div>
-                          <div class="checkbox disabled">
-                            <label><input type="checkbox" value="" disabled>Option 3</label>
-                          </div>
+                          <label class="control-label col-sm-1">2</label>
                           <div class="checkbox">
-                            <label><input type="checkbox" value="">Option 2</label>
+                            <label><input type="checkbox" value="2">Projektid</label>
                           </div>
+                          <label class="control-label col-sm-1">3</label>
                           <div class="checkbox">
-                            <label><input type="checkbox" value="">Option 2</label>
+                            <label><input type="checkbox" value="3">Isikud</label>
+                          </div>
+                          <label class="control-label col-sm-1">4</label>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="4">Auto</label>
                           </div>
                         </div>
                       </div>
@@ -190,7 +207,7 @@
                   </div>
 
                   <div class="col-sm-9 col-sm-offset-1">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-sm">
                       <thead class="thead-default">
                         <tr>
                           <th>Tüüp</th>
@@ -236,6 +253,67 @@
                             <input type="text" class="form-control" id="parameeter">
                           </td>
                         </tr>
+                        <tr>
+                          <td>
+                            <select class="form-control" id="tüüp">
+                            <option selected> </option>
+                            <option value="1">Võõrkeelne</option>
+                            <option value="2">Projektijuht</option>
+                          </select>
+                        </td>
+                          <td>
+                            <input type="text" class="form-control" id="sisu">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="parameeter">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select class="form-control" id="tüüp">
+                            <option selected> </option>
+                            <option value="1">Võõrkeelne</option>
+                            <option value="2">Projektijuht</option>
+                          </select>
+                        </td>
+                          <td>
+                            <input type="text" class="form-control" id="sisu">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="parameeter">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select class="form-control" id="tüüp">
+                            <option selected> </option>
+                            <option value="1">Võõrkeelne</option>
+                            <option value="2">Projektijuht</option>
+                          </select>
+                        </td>
+                          <td>
+                            <input type="text" class="form-control" id="sisu">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="parameeter">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select class="form-control" id="tüüp">
+                            <option selected> </option>
+                            <option value="1">Võõrkeelne</option>
+                            <option value="2">Projektijuht</option>
+                          </select>
+                        </td>
+                          <td>
+                            <input type="text" class="form-control" id="sisu">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="parameeter">
+                          </td>
+                        </tr>
+
                       </tbody>
                     </table>
                   </div>
