@@ -22,6 +22,10 @@ h1 {
 
 }
 
+h2 {
+	margin: 4px 0px 20px 0;
+}
+
 .control-label, h2, .main a, th {
 	font-variant: small-caps;
 	font-size: 1.1em;
@@ -34,7 +38,7 @@ h1 {
 	text-align: center;
 }
 
-.form-horizontal span {
+.form-info{
 	line-height: 2.5;
 }
 
@@ -59,7 +63,6 @@ a {
 
 .sidebar a {
 	color: #000000;
-	font-size: 1.1em;
 }
 
 .sidebar a:hover {
@@ -69,6 +72,10 @@ a {
 
 .upper-links a{
 	margin-right: 2em;
+}
+
+.sidebar .active {
+	color: #FF4343;
 }
 
 
@@ -90,28 +97,39 @@ select {
   background: url(img/down-arrow-small.png) 100% 50% no-repeat;
 }
 
-.form-horizontal .radio-inline{
+.form-horizontal .radio-inline, .checkbox label, .form-horizontal span{
 	font-weight: 200;
 }
 
 
-# ---- CUSTOM CHECKBOXES ---- #
+# ---- CUSTOM RADIO BUTTONS & CHECKBOXES ---- #
 
-/*input[type="checkbox"] {
-    display:none;
-} 
-
-input[type="checkbox"] + label span {
-    display: inline-block;
-    width:19px;
-    height:19px;
-    background-color: #ff4343;
-}*/
-
-.checkbox input[type=checkbox] {
-	    background-color: #ff4343;
-
+input[type="checkbox"].styled:checked + label:after,
+input[type="radio"].styled:checked + label:after,
+.checkbox input[type=checkbox]:checked + label:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e013";
 }
+
+input[type="checkbox"].styled:checked label:after,
+input[type="radio"].styled:checked label:after,
+.checkbox label:after {
+    padding-left: 4px;
+    padding-top: 2px;
+    font-size: 9px;
+}
+
+.radio-danger input[type="radio"] + label::after {
+  background-color: #FF4343;
+}
+.radio-danger input[type="radio"]:checked + label::before {
+  border-color: #FF4343;
+}
+.radio-danger input[type="radio"]:checked + label::after {
+  background-color: #FF4343;
+}
+
+
 
 # ---- TABLES ---- #
 
@@ -119,16 +137,21 @@ input[type="checkbox"] + label span {
 	background-color: #E7E9E9;
 }
 
-# ---- OTHER ---- #
+# ---- SIDEBAR ---- #
 
 
-#sidebar {
+#gray-area {
 	background-color: #E7E9E9;
+	position: fixed;
+	top:0;
+	bottom:0;
+	height: 100px;
+	line-height: 30px;
 }
 
-
-
-
+.sidebar {
+	font-weight: 200;
+}
 
 
 
