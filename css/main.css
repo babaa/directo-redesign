@@ -7,27 +7,43 @@
 # ---- TEXT ---- #
 
 body {
-	font-size: 11px;
+	font-size: 13px;
 	font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	font-size: 21pt;
+	font-size: 1.8em;
     letter-spacing: 2px;
     font-weight: 200;
+    color: black;
+	margin: 3em 0 1.5em 0;
 
 }
 
-.control-label, h2, .main a {
+.control-label, h2, .main a, th {
 	font-variant: small-caps;
-	font-size: 13pt;
+	font-size: 1.1em;
 	font-weight: 600;
     letter-spacing: 3px;
+    color: black;
 }
 
+.headertext {
+	text-align: center;
+}
+
+.form-horizontal span {
+	line-height: 2.5;
+}
+
+
 # ---- LINKS ---- #
+
+a {
+	color: #FF4343;
+}
 
 .main a {
 	color: #FF4343;
@@ -43,7 +59,7 @@ h1 {
 
 .sidebar a {
 	color: #000000;
-	font-size: 13pt;
+	font-size: 1.1em;
 }
 
 .sidebar a:hover {
@@ -51,14 +67,64 @@ h1 {
 	text-decoration: none;
 }
 
-# ----  ---- #
-
-.form-horizontal .label, .control-label{
-  text-align:right;
+.upper-links a{
+	margin-right: 2em;
 }
 
 
+# ---- FORMS ---- #
 
+.form-horizontal .label, .control-label{
+  text-align: right;
+}
+
+.form-control {
+	border-radius: 0;
+	box-shadow: none;
+	border: 1px solid #E7E9E9;
+}
+
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background: url(img/down-arrow-small.png) 100% 50% no-repeat;
+}
+
+.form-horizontal .radio-inline{
+	font-weight: 200;
+}
+
+
+# ---- CUSTOM CHECKBOXES ---- #
+
+/*input[type="checkbox"] {
+    display:none;
+} 
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width:19px;
+    height:19px;
+    background-color: #ff4343;
+}*/
+
+.checkbox input[type=checkbox] {
+	    background-color: #ff4343;
+
+}
+
+# ---- TABLES ---- #
+
+.tablehead {
+	background-color: #E7E9E9;
+}
+
+# ---- OTHER ---- #
+
+
+#sidebar {
+	background-color: #E7E9E9;
+}
 
 
 
