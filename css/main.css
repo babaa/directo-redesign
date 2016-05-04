@@ -51,6 +51,8 @@ a {
 
 .main a {
 	color: #FF4343;
+	text-decoration: none;
+
 }
 
 .main a:hover {
@@ -63,6 +65,8 @@ a {
 
 .sidebar a {
 	color: #000000;
+	text-decoration: none;
+
 }
 
 .sidebar a:hover {
@@ -70,12 +74,39 @@ a {
 	text-decoration: none;
 }
 
-.upper-links a{
-	margin-right: 2em;
-}
-
 .sidebar .active {
 	color: #FF4343;
+}
+
+
+# ---- BUTTONS ---- #
+
+.upper-links a {
+	text-decoration: none;
+}
+
+a.button.btn {
+	border: 1px solid #e9e7e7;
+    border-radius: 0px;
+    background-color: white;
+	margin-right: 1em;
+    padding: 8px 20px;
+
+}
+
+a.button.btn:hover {
+    background-color: #e9e7e7;
+    color: #ff4343;
+}
+
+.back-arrow:before {
+	font-size: 0.8em;
+/*    content: "▾ ";
+    content: "◄ ";
+*/}
+
+.backbutton {
+	margin-left: 2em;
 }
 
 
@@ -90,11 +121,34 @@ a {
 	box-shadow: none;
 	border: 1px solid #E7E9E9;
 }
+/*
+.styled-select {
+   width: 240px;
+   height: 34px;
+   overflow: hidden;
+   background: url(/img/down-arrow-small.png) no-repeat right #ddd;
+   border: 1px solid #ccc;
+   }
+
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }*/
 
 select {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px;
-  background: url(img/down-arrow-small.png) 100% 50% no-repeat;
+/*  -webkit-appearance: none;
+*/  -webkit-border-radius: 0px;
+}
+
+input, select {
+	font-weight: 200;
 }
 
 .form-horizontal .radio-inline, .checkbox label, .form-horizontal span{
@@ -104,21 +158,10 @@ select {
 
 # ---- CUSTOM RADIO BUTTONS & CHECKBOXES ---- #
 
-input[type="checkbox"].styled:checked + label:after,
-input[type="radio"].styled:checked + label:after,
-.checkbox input[type=checkbox]:checked + label:after {
-    font-family: 'Glyphicons Halflings';
-    content: "\e013";
-}
 
-input[type="checkbox"].styled:checked label:after,
-input[type="radio"].styled:checked label:after,
-.checkbox label:after {
-    padding-left: 4px;
-    padding-top: 2px;
-    font-size: 9px;
+.radio label::before {
+	border: 1px solid #e9e7e7;
 }
-
 .radio-danger input[type="radio"] + label::after {
   background-color: #FF4343;
 }
@@ -131,27 +174,105 @@ input[type="radio"].styled:checked label:after,
 
 
 
+.checkbox label::before {
+	border: 1px solid #e9e7e7;
+	border-radius: 0px;
+    background-color: #e9e7e7;
+}
+.checkbox-danger input[type="checkbox"]:checked + label::before, .checkbox-danger input[type="radio"]:checked + label::before {
+    background-color: #ff4343;
+    border-color: #ff4343;
+}
+
+# alternate color scheme:
+
+/*.checkbox label::before {
+	border: 1px solid #e9e7e7;
+	border-radius: 0px;
+    background-color: #e9e7e7;
+}*/
+/*.checkbox-danger input[type="checkbox"]:checked + label::before, .checkbox-danger input[type="radio"]:checked + label::before {
+    background-color: #e9e7e7;
+    color: #ff3434;
+	border: 1px solid #e9e7e7;
+}
+.checkbox-danger input[type="checkbox"]:checked + label::after, .checkbox-danger input[type="radio"]:checked + label::after {
+	color: #ff4343;
+}*/
+
 # ---- TABLES ---- #
 
 .tablehead {
 	background-color: #E7E9E9;
 }
 
+th.text-center {
+	background-color: #e9e7e7;
+	padding: 0px;
+	margin: 10px;
+
+}
+
+.table>thead>tr>th {
+	border: none;
+}
+
+table {
+	margin-top: 3em;
+}
+
 # ---- SIDEBAR ---- #
 
-
-#gray-area {
-	background-color: #E7E9E9;
-	position: fixed;
-	top:0;
-	bottom:0;
-	height: 100px;
-	line-height: 30px;
+html, body, .container-fluid, .row {
+	height: 100%;
 }
 
 .sidebar {
+	background-color: #E7E9E9;
 	font-weight: 200;
+	padding: 2em;
+    overflow: scroll;
+
 }
 
+@media (min-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: block;
+    background-color: #E7E9E9;
+  }
+}
 
+li ul li {
+	list-style: none;
+	margin-left: -15px;
+}
+
+ul {
+	list-style:none;
+}
+
+.collapsible:hover {
+    text-decoration: none;
+}
+.collapsible:hover span,
+.collapsible:hover strong {
+    text-decoration: underline;
+}
+.collapsible:before {
+    font-size: 1.1em;
+    vertical-align: -3px;
+}
+.collapsible:not(.collapsed):before {
+    content: "▾ ";
+    margin-right: 0px;
+}
+.collapsible.collapsed:before {
+    content: "▸ ";
+    margin-right: 0px;
+}
 
