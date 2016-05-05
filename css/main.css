@@ -76,6 +76,7 @@ a {
 
 .sidebar .active {
 	color: #FF4343;
+  font-weight: 600;
 }
 
 ul.menu{
