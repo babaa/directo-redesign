@@ -101,9 +101,7 @@ a.button.btn:hover {
 
 .back-arrow:before {
 	font-size: 0.8em;
-/*    content: "▾ ";
-    content: "◄ ";
-*/}
+}
 
 .backbutton {
 	margin-left: 2em;
@@ -121,37 +119,16 @@ a.button.btn:hover {
 	box-shadow: none;
 	border: 1px solid #E7E9E9;
 }
-/*
-.styled-select {
-   width: 240px;
-   height: 34px;
-   overflow: hidden;
-   background: url(/img/down-arrow-small.png) no-repeat right #ddd;
-   border: 1px solid #ccc;
-   }
-
-.styled-select select {
-   background: transparent;
-   width: 268px;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
-   }*/
 
 select {
-/*  -webkit-appearance: none;
-*/  -webkit-border-radius: 0px;
+  -webkit-border-radius: 0px;
 }
 
 input, select {
 	font-weight: 200;
 }
 
-.form-horizontal .radio-inline, .checkbox label, .form-horizontal span{
+.form-horizontal .radio-inline, .checkbox label, .form-horizontal span, .radio label{
 	font-weight: 200;
 }
 
@@ -184,21 +161,6 @@ input, select {
     border-color: #ff4343;
 }
 
-# alternate color scheme:
-
-/*.checkbox label::before {
-	border: 1px solid #e9e7e7;
-	border-radius: 0px;
-    background-color: #e9e7e7;
-}*/
-/*.checkbox-danger input[type="checkbox"]:checked + label::before, .checkbox-danger input[type="radio"]:checked + label::before {
-    background-color: #e9e7e7;
-    color: #ff3434;
-	border: 1px solid #e9e7e7;
-}
-.checkbox-danger input[type="checkbox"]:checked + label::after, .checkbox-danger input[type="radio"]:checked + label::after {
-	color: #ff4343;
-}*/
 
 # ---- TABLES ---- #
 
